@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pointedInquery.mapper.WordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.pointedInquery.entity.Word">
+        <id column="wordId" property="wordid" />
+        <result column="word" property="word" />
+        <result column="translation" property="translation" />
+        <result column="level" property="level" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        wordId, word, translation, level
+    </sql>
+
+</mapper>
